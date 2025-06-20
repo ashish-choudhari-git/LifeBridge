@@ -778,7 +778,9 @@
 
 /* Responsive Design for Flow Chart */
 @media (max-width: 768px) {
-
+  .flow-chart{
+    flex-direction: column;
+  }
 
   .flow-arrow {
     transform: rotate(90deg);
@@ -1159,7 +1161,7 @@
 
 .footer-bottom p {
   color: #9ca3af;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
   text-align: center;
 }
@@ -1212,4 +1214,9 @@
   .footer-links {
     gap: 2.5rem;
   }
+  .footer-bottom p {
+  font-size: 3px;
+ 
+}
+
 }
