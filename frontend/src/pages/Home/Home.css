@@ -386,6 +386,7 @@
 
 .about-text {
   flex: 1;
+  margin-inline:3rem;
 }
 
 .about-heading {
