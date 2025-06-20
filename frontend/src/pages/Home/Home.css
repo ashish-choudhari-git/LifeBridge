@@ -778,7 +778,9 @@
 
 /* Responsive Design for Flow Chart */
 @media (max-width: 768px) {
-
+  .flow-chart{
+    flex-direction: column;
+  }
 
   .flow-arrow {
     transform: rotate(90deg);
@@ -944,14 +946,17 @@
   flex: 2;
   overflow-y: auto;
   max-height: 100%;
+  margin-bottom: 5rem;
 }
 
-.details-text h3 {
+.details-title {
   font-size: 2rem;
   font-weight: 700;
   color: #1a365d;
   margin-bottom: 2rem;
   text-align: center;
+  overflow: hidden;
+  margin-bottom:30px;
 }
 
 .detail-section {
@@ -985,8 +990,7 @@
 
 .details-image img {
   max-width: 90%;
-  height: 33rem;
-  width: 30rem;
+  height: 30rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
@@ -1017,12 +1021,14 @@
     gap: 2rem;
   }
 
-  .details-text h3 {
+  .details-title {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   .donation-details {
     padding: 2rem 1.5rem;
+    height:auto;
   }
 }
 
@@ -1162,7 +1168,7 @@
 
 .footer-bottom p {
   color: #9ca3af;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
   text-align: center;
 }
@@ -1215,4 +1221,9 @@
   .footer-links {
     gap: 2.5rem;
   }
+  .footer-bottom p {
+  font-size: 3px;
+ 
+}
+
 }

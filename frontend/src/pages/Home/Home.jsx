@@ -410,8 +410,7 @@ const Home = () => {
 
           {selectedDonationType && (
             <div className="donation-details">
-              <h3 className="no-scrollbar">{donationTypes[selectedDonationType].title}</h3>
-
+              <h3 className="details-title">{donationTypes[selectedDonationType].title}</h3>
               <div className="details-content">
                 <div className="details-text">
                   <div className="detail-section ">
