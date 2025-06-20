@@ -722,10 +722,10 @@
 
 .flow-chart {
   display: flex;
-  row-gap: 3rem;
-  column-gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 0rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   /* gap: 1rem; */
   padding: 2rem;
@@ -739,9 +739,9 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   border: 2px solid #e2e8f0;
   min-width: 180px;
-  max-width: 200px;
+  max-width: 235px;
   transition: all 0.3s ease;
-  max-height:172px;
+  max-height:262px;
   overflow:hidden;
 }
 
@@ -778,10 +778,7 @@
 
 /* Responsive Design for Flow Chart */
 @media (max-width: 768px) {
-  .flow-chart {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+
 
   .flow-arrow {
     transform: rotate(90deg);
@@ -791,6 +788,7 @@
   .flow-step {
     min-width: 265px;
     max-width: 265px;
+  
   }
 
   .flow-heading {
