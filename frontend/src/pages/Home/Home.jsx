@@ -316,47 +316,47 @@ const Home = () => {
 
           <div className="flow-chart">
             <div className="flow-step">
-              <div className="step-icon">🩸</div>
+              <div className="step-icon">&#x1FA78;</div>
               <h3>Blood Donation</h3>
               <p>Volunteer donates blood at collection center</p>
             </div>
 
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow">&#x2192;</div>
 
             <div className="flow-step">
-              <div className="step-icon">🧪</div>
+              <div className="step-icon">&#x1F9EA;</div>
               <h3>Testing & Screening</h3>
               <p>Blood tested for diseases, blood type, and compatibility</p>
             </div>
 
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow">&#x2192;</div>
 
             <div className="flow-step">
-              <div className="step-icon">🔬</div>
+              <div className="step-icon">&#x1F52C;</div>
               <h3>Processing</h3>
               <p>Blood components (RBC, Plasma, Platelets)</p>
             </div>
 
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow">&#x2192;</div>
 
             <div className="flow-step">
-              <div className="step-icon">❄️</div>
+              <div className="step-icon">&#x2744;</div>
               <h3>Storage</h3>
               <p>Proper storage at controlled temperatures</p>
             </div>
 
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow">&#x2192;</div>
 
             <div className="flow-step">
-              <div className="step-icon">🏥</div>
+              <div className="step-icon">&#x1F3E5;</div>
               <h3>Distribution</h3>
               <p>Blood sent to hospitals and medical centers</p>
             </div>
 
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow">&#x2192;</div>
 
             <div className="flow-step">
-              <div className="step-icon">❤️</div>
+              <div className="step-icon heart">&#10084;</div>
               <h3>Recipient</h3>
               <p>Blood transfused to patient in need</p>
             </div>
@@ -383,7 +383,7 @@ const Home = () => {
               }`}
               onClick={() => handleDonationTypeClick("red-cells")}
             >
-              <div className="option-icon">🩸</div>
+              <div className="option-icon">&#x1FA78;</div>
               <h3>Red Blood Cells</h3>
             </button>
 
@@ -393,7 +393,7 @@ const Home = () => {
               }`}
               onClick={() => handleDonationTypeClick("plasma")}
             >
-              <div className="option-icon">💧</div>
+              <div className="option-icon">&#x1F4A7;</div>
               <h3>Plasma</h3>
             </button>
 
@@ -403,7 +403,7 @@ const Home = () => {
               }`}
               onClick={() => handleDonationTypeClick("platelets")}
             >
-              <div className="option-icon">🩹</div>
+              <div className="option-icon"> &#x1FA79;</div>
               <h3>Platelets</h3>
             </button>
           </div>

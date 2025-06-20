@@ -733,6 +733,10 @@
   }
 }
 
+.heart{
+  color: red !important;
+}
+
 @media (max-width: 480px) {
   .flow-chart-section {
     padding: 3rem 1rem;
