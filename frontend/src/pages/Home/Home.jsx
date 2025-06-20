@@ -410,10 +410,10 @@ const Home = () => {
 
           {selectedDonationType && (
             <div className="donation-details">
+              <h3 className="no-scrollbar">{donationTypes[selectedDonationType].title}</h3>
+
               <div className="details-content">
                 <div className="details-text">
-                  <h3>{donationTypes[selectedDonationType].title}</h3>
-
                   <div className="detail-section ">
                     <h4>What is it?</h4>
                     <p>{donationTypes[selectedDonationType].whatIsIt}</p>
@@ -460,7 +460,7 @@ const Home = () => {
                   )}
                 </div>
 
-                <div className="details-image">
+                <div className="details-image no-scrollbar">
                   <img
                     src={donationTypes[selectedDonationType].image}
                     alt={donationTypes[selectedDonationType].title}
