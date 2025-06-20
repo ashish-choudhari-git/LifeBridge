@@ -139,6 +139,32 @@
     max-height: 350px;
     transform: scale(1.1);
   }
+
+  .donation-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .donation-option {
+    min-width: 140px;
+    max-width: 180px;
+    width: unset;
+  }
+  .option-icon {
+    width: 39px;
+    max-width: 39px;
+    font-size: 2rem;
+    margin: 0 auto 0.5rem auto;
+    display: block;
+  }
+  .donation-option h3 {
+    width: 124px;
+    max-width: 124px;
+    font-size: 1rem;
+    margin: 0 auto;
+    word-break: break-word;
+    white-space: normal;
+    display: block;
+  }
 }
 
 /* Mobile Responsive Design */
@@ -310,6 +336,32 @@
 
   .section {
     padding: 1rem;
+  }
+
+  .donation-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .donation-option {
+    min-width: 100px;
+    max-width: 140px;
+    width: unset;
+  }
+  .option-icon {
+    width: 39px;
+    max-width: 39px;
+    font-size: 1.3rem;
+    margin: 0 auto 0.3rem auto;
+    display: block;
+  }
+  .donation-option h3 {
+    width: 124px;
+    max-width: 124px;
+    font-size: 0.95rem;
+    margin: 0 auto;
+    word-break: break-word;
+    white-space: normal;
+    display: block;
   }
 }
 
@@ -808,6 +860,7 @@
 .donation-options {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   gap: 3rem;
   padding: 1rem;
   margin-bottom: 3rem;
@@ -816,8 +869,10 @@
 }
 
 .donation-option {
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 50px;
+  max-width: 200px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 2rem 1.5rem;
   background: var(--section-bg);
   color: var(--text-main);
@@ -827,31 +882,21 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.donation-option:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  border-color: #3b82f6;
-  background-color: #e2e8f0;
-}
-
-.donation-option.active {
-  background: var(--primary-accent);
-  color: white;
-  border-color: #3b82f6;
-  transform: scale(1.05);
+  
 }
 
 .option-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  max-width: 100%;
+  font-size: 2.5rem;
+  word-break: break-word;
 }
 
 .donation-option h3 {
+  max-width: 100%;
   font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0;
+  word-break: break-word;
+  white-space: normal;
+  
 }
 
 .donation-details {
@@ -938,45 +983,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .details-image {
-    margin-top: 0.5rem;
-  }
-  .details-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  .donation-details {
-    height: 40rem;
-    padding: 1.5rem 0.5rem;
-  }
-  .details-content {
-    flex-direction: column;
-    gap: 1rem;
-    height: 100%;
-  }
-  .details-text {
-    max-height: 18rem;
-    overflow-y: auto;
-  }
-  .donation-option{
-    min-width: 200px;
-  max-width: 250px;
-  }
-  
-}
 
 /* Responsive Design for Donation Types */
 @media (max-width: 768px) {
-  .donation-options {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
 
   .donation-option {
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 50px;
+    max-width: 200px;
   }
 
   .donation-heading {
