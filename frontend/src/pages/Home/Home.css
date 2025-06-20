@@ -946,14 +946,17 @@
   flex: 2;
   overflow-y: auto;
   max-height: 100%;
+  margin-bottom: 5rem;
 }
 
-.details-text h3 {
+.details-title {
   font-size: 2rem;
   font-weight: 700;
   color: #1a365d;
   margin-bottom: 2rem;
   text-align: center;
+  overflow: hidden;
+  margin-bottom:30px;
 }
 
 .detail-section {
@@ -979,14 +982,12 @@
   flex: 1;
   display: flex;
   align-items: start;
-  margin-top: 2rem;
   justify-content: center;
 }
 
 .details-image img {
   max-width: 90%;
   height: 30rem;
-  margin-top: 2.8rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -1016,12 +1017,14 @@
     gap: 2rem;
   }
 
-  .details-text h3 {
+  .details-title {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   .donation-details {
     padding: 2rem 1.5rem;
+    height:auto;
   }
 }
 

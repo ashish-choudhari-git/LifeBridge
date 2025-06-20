@@ -410,10 +410,9 @@ const Home = () => {
 
           {selectedDonationType && (
             <div className="donation-details">
+              <h3 className="details-title">{donationTypes[selectedDonationType].title}</h3>
               <div className="details-content">
                 <div className="details-text">
-                  <h3>{donationTypes[selectedDonationType].title}</h3>
-
                   <div className="detail-section ">
                     <h4>What is it?</h4>
                     <p>{donationTypes[selectedDonationType].whatIsIt}</p>
