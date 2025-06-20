@@ -47,7 +47,7 @@
   width: 100%;
   background-color: var(--primary-bg);
   padding: 3rem 2rem;
-  min-height: 94vh;
+  min-height: 690px;
   display: flex;
   align-items: center;
 }
@@ -67,7 +67,7 @@
 }
 
 .hero-heading {
-  font-size: 3.6rem;
+  font-size: 5rem;
   font-weight: 700;
   color: var(--primary-dark);
   margin-bottom: 3.25rem;
@@ -178,8 +178,11 @@
   }
 
   .hero-button {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.2rem;
     font-size: 0.95rem;
+    width: auto;
+    max-width: 90vw;
+    display: inline-block;
   }
 
   .hero-image img {
@@ -205,6 +208,14 @@
   .hero-subheading {
     font-size: 0.95rem;
     margin-bottom: 2.2rem;
+  }
+
+  .hero-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    width: auto;
+    max-width: 90vw;
+    display: inline-block;
   }
 
   .hero-image img {
@@ -747,8 +758,8 @@
   }
 
   .flow-step {
-    min-width: 200px;
-    padding: 1.5rem 1rem;
+    min-width: 205px;
+    max-width: 205px;
   }
 
   .step-icon {
@@ -796,17 +807,17 @@
 }
 
 .donation-option {
+  min-width: 200px;
+  max-width: 250px;
+  padding: 2rem 1.5rem;
   background: var(--section-bg);
   color: var(--text-main);
   border: 2px solid #e2e8f0;
   border-radius: 16px;
-  padding: 2rem 1.5rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
-  max-width: 250px;
 }
 
 .donation-option:hover {
@@ -939,6 +950,11 @@
     max-height: 18rem;
     overflow-y: auto;
   }
+  .donation-option{
+    min-width: 200px;
+  max-width: 250px;
+  }
+  
 }
 
 /* Responsive Design for Donation Types */
@@ -997,8 +1013,8 @@
   }
 
   .donation-option {
-    min-width: 200px;
-    padding: 1.5rem 1rem;
+    min-width: 100px;
+    /* padding: 1.5rem 1rem; */
   }
 
   .option-icon {
