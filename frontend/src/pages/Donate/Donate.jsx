@@ -18,7 +18,7 @@ export default function BloodDonationForm() {
 
     try {
       const response = await axios.post(
-        "https://backend-rtno.onrender.com/api/donate",
+        "https://lifebridge-i9ln.onrender.com/api/donate",
         formData
       );
       alert("Form submitted successfully!");
