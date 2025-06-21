@@ -1,20 +1,24 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors"); // Used to Connect frontend-backend
+const cors = require("cors");
 const donorRoutes = require("./routes/donorRoutes");
+const stateDistrictRoutes = require("./routes/stateDistrict");
+const bloodBankRoutes = require("./routes/bloodBankRoutes");
 require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: "*", // Allow all (for dev) or specify frontend origin
+  origin: "*",
   methods: ["GET", "POST"],
   credentials: true
-})); // for frontend-backend interaction
-app.use(express.json());// Parse JSON data coming from frontend
+}));
+app.use(express.json());
 
 app.use("/api/donate", donorRoutes);
+app.use("/api/location", stateDistrictRoutes);
+app.use("/api/bloodbank", bloodBankRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)

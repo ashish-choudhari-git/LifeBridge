@@ -7,7 +7,13 @@ export default defineConfig({
 
   server: {
     host: true, 
-    port: 5174, 
+    port: 5174,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    } 
   },
   plugins: [react(), tailwindcss(),],
 })

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>eRaktkosh API Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 10px 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>eRaktkosh Blood Stock API</h2>
+
+    <input
+      type="text"
+      id="stateCode"
+      placeholder="Enter State Code (e.g. 27)"
+    />
+    <input
+      type="text"
+      id="districtCode"
+      placeholder="Enter District Code (e.g. 519)"
+    />
+    <button onclick="fetchBloodStock()">Get Blood Stock</button>
+
+    <script>
+      function fetchBloodStock() {
+        const stateCode = document.getElementById("stateCode").value;
+        const districtCode = document.getElementById("districtCode").value;
+
+        const url = `https://eraktkosh.mohfw.gov.in//BLDAHIMS/bloodbank/nearbyBB.cnt?hmode=GETNEARBYSTOCKDETAILS&stateCode=${stateCode}&districtCode=${districtCode}&bloodGroup=all&bloodComponent=11&lang=0`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Blood stock data:", data);
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
